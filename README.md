@@ -1,3 +1,10 @@
+Kraken Extension
+===============================================
+
+This project has some utility software for kraken, which will make your life better.
+
+- db_keeper: mmap database.kdb and database.idx, and then hold it in RAM forever until process quit.
+
 Kraken taxonomic sequence classification system
 ===============================================
 

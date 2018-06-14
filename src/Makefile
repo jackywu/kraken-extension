@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -Wall -fopenmp -O3
-PROGS = db_sort set_lcas classify make_seqid_to_taxid_map db_shrink kmer_estimator
+PROGS = db_sort set_lcas classify make_seqid_to_taxid_map db_shrink db_keeper kmer_estimator
 
 .PHONY: all install clean
 
@@ -11,6 +11,8 @@ install: $(PROGS)
 
 clean:
 	rm -f $(PROGS) *.o
+
+db_keeper: krakendb.o quickfile.o
 
 db_shrink: krakendb.o quickfile.o
 
